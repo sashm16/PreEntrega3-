@@ -1,0 +1,33 @@
+//nesting
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $mainColor;
+    img{
+        width: 150px;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            margin-right:10px;
+            a{
+                color: $mainColor;
+                text-decoration: none;
+                font-size: $textMd;
+                font-family: $mainFont;
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.logo{
+    width: 100px;
+    height:100px;
+    margin-top: 40px;
+    margin-left: 40px;
+}

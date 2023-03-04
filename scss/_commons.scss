@@ -1,0 +1,114 @@
+//Todo lo que es común al proyecto
+$backgroundColor: linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% );
+$mainColor:black;
+$white: white;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    overflow-x: hidden;
+
+}
+body{
+    background-image: $backgroundColor;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}
+
+.home{
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1{
+    color: $mainColor;
+    font-family: $mainFont;
+    font-size: 50px;
+    font-weight: $textBold;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+h2{
+    color: $mainColor;
+    font-family: $mainFont;
+    font-size: 20px;
+    font-weight: $textBold;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 60% 40% ;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "mainNav aside"
+    "footer footer"
+
+}
+
+#header{
+
+    grid-area: header;
+
+}
+
+#nav{
+
+    grid-area: nav;
+
+}
+
+#mainNav{
+
+    grid-area: mainNav;
+}
+
+#aside{
+
+    grid-area: aside;
+
+}
+
+#footer{
+
+    grid-area: footer;
+
+}
+
+.contenedorTexto{
+        width: 80% ;
+        height: 80%;
+        text-align: center;
+        margin: auto;
+        margin-top: 100px;
+        padding: 40px;
+        border: $mainColor;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    
+
+
+@keyframes textAlpha{
+    from{opacity:0}
+    to{opacity:100}
+ 
+ }
+ 
+ p{
+     animation-name: textAlpha;
+     animation-duration: 1s;
+ }

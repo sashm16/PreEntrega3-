@@ -1,0 +1,14 @@
+// Imports de partials
+@import "_variables";
+@import "_fonts";
+@import "_commons";
+@import "_mixins";
+@import "_navbar";
+@import "_footer";
+@import "./paginas/home";
+@import "./paginas/vision";
+@import "./paginas/contacto";
+@import "./paginas/habilidades";
+@import "./paginas/sobremi";
+@import "_media.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss"

@@ -1,0 +1,21 @@
+{
+  "name": "preentrega3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss css/main.css",
+    "start": "nodemon -e scss,html  -x \"npm run sass:watch\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "sass": "^1.58.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}

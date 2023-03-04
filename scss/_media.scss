@@ -1,0 +1,121 @@
+/* TABLET */    
+/* Deje la misma estructura de Grid que en desktop */ 
+@media (max-width:768px){
+
+    .asideFoto{
+    
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        padding: 20px;
+        display: block;
+        margin: auto;
+
+    
+    }
+    
+    .contenedorTextoContactame{
+        @extend .contenedorTexto;
+        padding: 40px;
+    }
+    
+    
+    }
+
+    /* MOBILE */
+@media (max-width:480px)
+{
+    
+    .contenedor{
+       /* No le pongo grid display porque lo hereda */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "header"
+        "nav"
+        "mainNav"
+        "aside"
+        "footer"
+    
+    }
+    
+    #header{
+    
+        grid-area: header;
+    
+    }
+    
+    #nav{
+    
+        grid-area: nav;
+    
+    }
+    
+    #mainNav{
+    
+        grid-area: mainNav;
+    }
+    
+    #aside{
+    
+        grid-area: aside;
+    
+    }
+    
+    #footer{
+    
+        grid-area: footer;
+    
+    }
+
+
+    .contenedorHabilidades{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "headerHabilidades"
+        "navHabilidades"
+        "mainFormacion"
+        "asideHabilidades"
+        "footerHabilidades";
+    }
+    
+    #headerHabilidades{
+    grid-area: headerHabilidades;
+    }
+    
+    #navHabilidades{
+    grid-area: navHabilidades;
+    }
+    
+    #mainFormacion{
+    grid-area: mainFormacion;
+    }
+    
+    #asideHabilidades{
+    grid-area: asideHabilidades; 
+    }
+    
+    #footerHabilidades{
+    grid-area: footerHabilidades;
+    }
+    
+    .formacion{
+        margin-top: 50px;
+    }
+    
+    .habilidades{
+        margin-top: 50px;
+    }
+
+    .asideFoto{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+
+   
+    }
+    
+
+}

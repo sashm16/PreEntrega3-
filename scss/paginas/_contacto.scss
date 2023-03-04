@@ -1,0 +1,27 @@
+
+
+.formulario{
+    @include flex(column,center,center)
+}
+.label{
+    margin: 10px;
+
+ 
+ }
+
+ .letraBoton{
+   @include botonesLetras;
+}
+
+#boton{
+    transform:translate(-10px,10px);
+    cursor: pointer;
+    color: $mainColor;
+    transition: all 1s;
+    background: $botoneraColor;
+    background: $botoneraColorB;
+}
+
+.tituloContactame{
+    @include titulos
+    }
